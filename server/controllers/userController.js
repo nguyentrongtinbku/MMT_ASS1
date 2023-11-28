@@ -35,7 +35,7 @@ function getLastNameFromPath(path) {
 const userController = {
   Register: async (req, res) => {
     const networkInterfaces = os.networkInterfaces();
-    const clientIp = networkInterfaces["Wi-Fi"][1].address;
+    const clientIp = networkInterfaces["WiFi"][1].address;
 
     try {
       const newData = new User({

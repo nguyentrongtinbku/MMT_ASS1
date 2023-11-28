@@ -12,13 +12,7 @@ const Admin = () => {
   const [file, setfile] = useState("");
   const [ping, setping] = useState("");
 
-  useEffect(() => {
-    const admin = JSON.parse(localStorage.getItem("userData"));
-    console.log(admin.data.isAdmin !== true);
-    {
-      navigate("/home");
-    }
-  }, []);
+
 
   const handleInputChange = (e) => {
     setstate1(e.target.value);
